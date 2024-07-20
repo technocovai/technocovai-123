@@ -219,7 +219,7 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form method="post">
+                    <form method="post" name="google-sheet">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <input type="text" class="form-control border-0 bg-light px-4" name="name"
@@ -265,70 +265,8 @@
     </div>
 
 
-     <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
- if (isset($_POST['sub'])) {
-            // include('includes/security.php');
-            $name=$_POST['name'];
-            $email=$_POST['mail'];
-            $subject=$_POST['subject'];
-            $mobile=$_POST['mob'];
-            $msg=$_POST['msg'];
 
 
-            
-
-            require './PHPMailer/src/Exception.php';
-            require './PHPMailer/src/PHPMailer.php';
-            require './PHPMailer/src/SMTP.php';
-
-            $mail = new PHPMailer(true);
-            $hello='Dear ' .$name.',<br>
-            We received your message.  Here are the details you provided <br>
-            Mailid : '.$email.'.<br>
-            Subject : '.$subject.'.<br>
-            Mobile Number : '.$mobile.'.<br>
-            Message : '.$msg.'.<br>
-            <br>
-            Our team will review your message and respond as soon as possible.
-        <br>
-        Thank you for contacting TechnoCovai Team!<br>
-        <br>
-        Sincerely,<br>
-        <br>
-        TechnoCovai Team
-        <br>
-        <br>
-        This is a system generated email. Please do not reply to this Mail.';
-            try {
-                //Server settings
-                $mail->isSMTP();
-                $mail->Host = 'smtp.gmail.com';  // Specify your SMTP server
-                $mail->SMTPAuth = true;
-                $mail->Username = 'technocovai@gmail.com';  // SMTP username
-                $mail->Password = 'kuwh qbii jtcg fvfw';  // SMTP password
-                $mail->SMTPSecure = 'tls';
-                $mail->Port = 587;
-            
-                //Recipients
-                $mail->setFrom('technocovai@gmail.com', 'TechnoCovai');
-                $mail->addAddress($email);
-            
-                //Content
-                $mail->isHTML(true);  // Set to true if you're sending HTML content
-                $mail->Subject = 'TechnoCovai Contact Us';
-                $mail->Body = $hello;
-            
-                // Send the email
-                $mail->send();
-                echo "<script>alert('Data Received Successfully');</script>";
-            } catch (Exception $e) {
-                echo "Not Received, Error: {$mail->ErrorInfo}";
-            }
-        }
-            ?>
-    
     <!-- Contact End -->
 
 
@@ -484,7 +422,7 @@ use PHPMailer\PHPMailer\Exception;
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
 
-       
+
 </body>
 
 </html>
