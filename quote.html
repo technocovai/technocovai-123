@@ -36,7 +36,32 @@
             event.preventDefault();
         });
     </script> -->
+    <style>
+        .loader {
+            border: 5px solid #f3f3f3;
+            /* Light grey */
+            border-top: 5px solid #3498db;
+            /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+            /* Centering the loader */
+            display: none;
+            /* Initially hidden */
+        }
 
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -248,6 +273,7 @@
                                 </div>
                             </div>
                         </form>
+                        <div id="loader" class="loader"></div>
                     </div>
                 </div>
             </div>
@@ -257,16 +283,23 @@
     <script type="text/javascript">
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzXMXnju1y8-ncr-H7KD_clICH4cSjWBHGwrurpN3mYFFVBb11dvKHnJITWyxEJO3vM-g/exec';
         const form = document.forms['google-sheet'];
+        const loader = document.getElementById('loader');
 
         form.addEventListener('submit', e => {
             e.preventDefault();
+            loader.style.display = 'block'; // Show the loader
+
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
+                    loader.style.display = 'none'; // Hide the loader on success
                     alert("You have successfully submitted.");
                     // Optionally, you can reload the page after submission
                     window.location.reload();
                 })
-                .catch(error => console.error('Error!', error.message));
+                .catch(error => {
+                    loader.style.display = 'none'; // Hide the loader on error
+                    console.error('Error!', error.message);
+                });
         });
     </script>
 
