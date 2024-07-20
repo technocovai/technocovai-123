@@ -255,17 +255,19 @@
     </div>
     <!-- Quote End -->
     <script type="text/javascript">
-
-
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzXMXnju1y8-ncr-H7KD_clICH4cSjWBHGwrurpN3mYFFVBb11dvKHnJITWyxEJO3vM-g/exec'
-        const form = document.forms['google-sheet']
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzXMXnju1y8-ncr-H7KD_clICH4cSjWBHGwrurpN3mYFFVBb11dvKHnJITWyxEJO3vM-g/exec';
+        const form = document.forms['google-sheet'];
 
         form.addEventListener('submit', e => {
-            e.preventDefault()
+            e.preventDefault();
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("You have successfully submitted."))
-                .catch(error => console.error('Error!', error.message))
-        })
+                .then(response => {
+                    alert("You have successfully submitted.");
+                    // Optionally, you can reload the page after submission
+                    window.location.reload();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
     </script>
 
 
