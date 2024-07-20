@@ -204,7 +204,7 @@
                 <div class="col-lg-5">
                     <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn"
                         data-wow-delay="0.9s">
-                        <form method="post">
+                        <form method="post" name="google-sheet">
                             <div class="row g-3">
                                 <div class="col-xl-12">
                                     <input type="text" class="form-control bg-light border-0" name="name" maxlength="20"
@@ -212,14 +212,14 @@
                                 </div>
                                 <div class="col-12">
                                     <input type="email" class="form-control bg-light border-0" name="mail" Required
-                                        placeholder="Your Email"  style="height: 55px;">
+                                        placeholder="Your Email" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
                                     <input type="text" class="form-control bg-light border-0" name="mob" maxlength="10"
                                         Required placeholder="Mobile_No" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <select class="form-select bg-light border-0" style="height: 55px;" name="courses"
+                                    <select class="form-select bg-light border-0" style="height: 55px;" name="subject"
                                         Required>
                                         <option selected>Select Courses</option>
                                         <optgroup label="Software Development">
@@ -254,70 +254,20 @@
         </div>
     </div>
     <!-- Quote End -->
-
-     <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
- if (isset($_POST['sub'])) {
-            // include('includes/security.php');
-            $name=$_POST['name'];
-            $email=$_POST['mail'];
-            $subject=$_POST['courses'];
-            $mobile=$_POST['mob'];
-            $msg=$_POST['msg'];
+    <script type="text/javascript">
 
 
-            
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzXMXnju1y8-ncr-H7KD_clICH4cSjWBHGwrurpN3mYFFVBb11dvKHnJITWyxEJO3vM-g/exec'
+        const form = document.forms['google-sheet']
 
-            require './PHPMailer/src/Exception.php';
-            require './PHPMailer/src/PHPMailer.php';
-            require './PHPMailer/src/SMTP.php';
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("You have successfully submitted."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
-            $mail = new PHPMailer(true);
-            $hello='Dear ' .$name.',<br>
-            We received your message.  Here are the details you provided, <br>
-            Mailid : '.$email.'.<br>
-            Course : '.$subject.'.<br>
-            Mobile Number : '.$mobile.'.<br>
-            Message : '.$msg.'.<br>
-            <br>
-            Our team will review your message and respond as soon as possible.
-        <br>
-        Thank you for contacting TechnoCovai Team!<br>
-        <br>
-        Sincerely,<br>
-        <br>
-        TechnoCovai Team.
-        <br>
-        <br>
-        This is a system generated email. Please do not reply to this Mail.';
-            try {
-                //Server settings
-                $mail->isSMTP();
-                $mail->Host = 'smtp.gmail.com';  // Specify your SMTP server
-                $mail->SMTPAuth = true;
-                $mail->Username = 'technocovai@gmail.com';  // SMTP username
-                $mail->Password = 'kuwh qbii jtcg fvfw';  // SMTP password
-                $mail->SMTPSecure = 'tls';
-                $mail->Port = 587;
-            
-                //Recipients
-                $mail->setFrom('technocovai@gmail.com', 'TechnoCovai');
-                $mail->addAddress($email);
-            
-                //Content
-                $mail->isHTML(true);  // Set to true if you're sending HTML content
-                $mail->Subject = 'TechnoCovai Contact Us';
-                $mail->Body = $hello;
-            
-                // Send the email
-                $mail->send();
-                echo "<script>alert('Data Received Successfully');</script>";
-            } catch (Exception $e) {
-                echo "Not Received, Error: {$mail->ErrorInfo}";
-            }
-        }
-            ?>
 
     <!-- Vendor Start -->
     <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
