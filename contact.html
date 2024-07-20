@@ -242,7 +242,7 @@
                                     placeholder="Message"></textarea>
                             </div>
                             <div class="col-12">
-                                <input class="btn btn-primary w-100 py-3" name="sub" type="submit">
+                                <input class="btn btn-primary w-100 py-3" name="submit" type="submit">
                             </div>
                         </div>
                     </form>
@@ -263,7 +263,19 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
 
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzXMXnju1y8-ncr-H7KD_clICH4cSjWBHGwrurpN3mYFFVBb11dvKHnJITWyxEJO3vM-g/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("You have successfully submitted."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
 
 
