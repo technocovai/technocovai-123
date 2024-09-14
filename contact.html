@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./img/techlog.png">
+    <link rel="icon" type="image/x-icon" href="./img/techicon.png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,32 +37,7 @@
             event.preventDefault();
         });
     </script> -->
-    <style>
-        .loader {
-            border: 5px solid #f3f3f3;
-            /* Light grey */
-            border-top: 5px solid #3498db;
-            /* Blue */
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
-            /* Centering the loader */
-            display: none;
-            /* Initially hidden */
-        }
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -110,215 +85,213 @@
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="index.py" class="navbar-brand p-0">
-                <img src="./img/techicon.png" alt="" height="70px" width="100px">
+            <div class="container-fluid d-flex align-items-center">
+                <a href="index.py" class="navbar-brand p-0">
+                    <img src="./img/techicon.png" alt="" height="70px" width="100px">
 
-            </a>
-            <h1 class="m-0" style="color:#414F80;font-family:serif;">Techno<span style="color:#B72106;">Covai</span>
-            </h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <!-- <a href="service.py" class="nav-item nav-link">Courses</a> -->
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="software.html" class="dropdown-item">Software Development</a>
+                </a>
+                <h1 class="m-0" style="background: linear-gradient(to right, #e529f2, #6f08cf);-webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;font-family: serif;">
+                    TechnoCovai
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <div class="d-flex flex-column flex-lg-row align-items-center">
+                            <a href="index.html"
+                                class="nav-item nav-link d-flex align-items-center me-lg-4 me-2 ">Home</a>
+                            <a href="about.html" class="nav-item nav-link d-flex align-items-center me-lg-4 me-2">About
+                                Us</a>
+                            <!-- <a href="service.py" class="nav-item nav-link d-flex align-items-center me-lg-4 me-2">Courses</a> -->
+                            <div class="d-flex flex-column flex-lg-row">
+                                <div class="nav-item dropdown d-flex align-items-center me-lg-4 me-2">
+                                    <a href="#" class="nav-link dropdown-toggle d-flex align-items-center"
+                                        data-bs-toggle="dropdown">Courses</a>
+                                    <div class="dropdown-menu" style="margin-top: 100px;">
+                                        <a href="software.html" class="dropdown-item">Software Development</a>
+                                    </div>
+                                </div>
+                                <div class="nav-item dropdown d-flex align-items-center me-lg-4 me-2">
+                                    <!-- <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">Pages</a>
+                                                <div class="dropdown-menu m-0">
+                                                    <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                                                    <a href="feature.html" class="dropdown-item">Our features</a>
+                                                    <a href="team.html" class="dropdown-item">Team Members</a>
+                                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                                    <a href="quote.html" class="dropdown-item">Free Quote</a>
+                                                </div> -->
+                                </div>
+                            </div>
+                            <a href="contact.html"
+                                class="nav-item nav-link d-flex align-items-center me-lg-4 me-2 active">Contact
+                                Us</a>
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
-                        <!-- <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                            <a href="feature.html" class="dropdown-item">Our features</a>
-                            <a href="team.html" class="dropdown-item">Team Members</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="quote.html" class="dropdown-item active">Free Quote</a>
-                        </div> -->
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    <!-- <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a> -->
                 </div>
-                <!-- <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal"
-                    data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                <a href="https://htmlcodex.com/startup-company-website-template"
-                    class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a> -->
             </div>
         </nav>
 
-        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-            <div class="row py-5">
-                <div class="col-lg-6 offset-lg-3 pt-lg-10 pb-lg-5 text-center"
-                    style="background-color: rgba(0, 0, 0, 0.6); margin-top: 150px;">
-                    <h1 class="display-4 animated zoomIn text-white">Contact Us</h1>
-                    <a href="./index.html" class="h5 text-primary">Home</a>
-                    <i class="far fa-circle text-white px-2"></i>
-                    <a href="./contact.html" class="h5 text-primary">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Navbar End -->
+        <!-- Navbar End -->
 
 
 
 
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3"
-                            placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-primary p-3"
+                                placeholder="Type search keyword">
+                            <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Full Screen Search End -->
+        <!-- Full Screen Search End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto"
-                style="max-width: 600px; font-family: 'Times New Roman', Times, serif;">
-                <h5 class="fw-bold text-primary text-uppercase">Contact Us</h5>
-                <h1 class="mb-0" style="font-family: 'Times New Roman', Times, serif;">If You Have
-                    Any Query, Feel Free
-                    To Contact Us</h1>
-            </div>
-            <div class="row g-5 mb-5">
-                <div class="col-lg-4">
-                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.1s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
+        <!-- Contact Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5 mt-5">
+                <div class="section-title text-center position-relative pb-3 mb-5 mx-auto"
+                    style="max-width: 600px; font-family: 'Times New Roman', Times, serif;">
+                    <h5 class="fw-bold text-uppercase" style="color:#e529f2">Contact Us</h5>
+                    <h1 class="mb-0" style="font-family: 'Times New Roman', Times, serif;">If You Have
+                        Any Query, Feel Free
+                        To Contact Us</h1>
+                </div>
+                <div class="row g-5 mb-5">
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex align-items-center justify-content-center rounded bg-primary"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-phone-alt text-white"></i>
+                            </div>
+                            <div class="ps-4" st \yle="font-family: 'Times New Roman', Times, serif;">
+                                <h5 class="mb-2" style="font-family: 'Times New Roman', Times, serif;">Reach Us For More
+                                    Details</h5>
+                                <h5 class="mb-0" style="color:#e529f2;font-family: 'Times New Roman', Times, serif;">+91
+                                    9363922322</h5>
+                            </div>
                         </div>
-                        <div class="ps-4" st \yle="font-family: 'Times New Roman', Times, serif;">
-                            <h5 class="mb-2" style="font-family: 'Times New Roman', Times, serif;">Reach Us For More
-                                Details</h5>
-                            <h5 class="text-primary mb-0" style="font-family: 'Times New Roman', Times, serif;">+91
-                                9363922322</h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.4s">
+                            <div class="d-flex align-items-center justify-content-center rounded bg-primary"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-envelope-open text-white"></i>
+                            </div>
+                            <div class="ps-4" style="font-family: 'Times New Roman', Times, serif;">
+                                <h5 class="mb-2" style="font-family: 'Times New Roman', Times, serif;">Email to get free
+                                    quote</h5>
+                                <a class=" mb-0"
+                                    style="color:#e529f2;font-family: 'Times New Roman', Times, serif;font-size: 20px;;"
+                                    href="mailto:technocovaisoftwares@gmail.com">
+                                    technocovaisoftwares@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center wow fadeIn " data-wow-delay="0.8s">
+                            <div class="d-flex align-items-center justify-content-center rounded bg-primary"
+                                style="width: 60px; height: 60px;">
+                                <i class="fa fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div class="ps-4" style="font-family: 'Times New Roman', Times, serif;">
+                                <h5 class="mb-2" style="font-family: 'Times New Roman', Times, serif;">Visit our office
+                                </h5>
+                                <h6 class="mb-0" style="color:#e529f2;font-family: 'Times New Roman', Times, serif;">NO
+                                    51,
+                                    Balaji Nagar, Madukkarai, Coimbatore-641105,Tamilnadu.</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.4s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-envelope-open text-white"></i>
-                        </div>
-                        <div class="ps-4" style="font-family: 'Times New Roman', Times, serif;">
-                            <h5 class="mb-2" style="font-family: 'Times New Roman', Times, serif;">Email to get free
-                                quote</h5>
-                            <a class="text-primary mb-0"
-                                style="font-family: 'Times New Roman', Times, serif;font-size: 20px;;"
-                                href="mailto:technocovaisoftwares@gmail.com">
-                                technocovaisoftwares@gmail.com</a>
-                        </div>
+                <div class="row g-5">
+                    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
+                        <form method="post" name="google-sheet">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control border-0 bg-light px-4" name="name"
+                                        maxlength="20" Required placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control border-0 bg-light px-4" name="mail" Required
+                                        placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control border-0 bg-light px-4" name="subject"
+                                        Required placeholder="Subject" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control border-0 bg-light px-4" name="mob"
+                                        maxlength="10" Required placeholder="Mobile_No" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0 bg-light px-4 py-3" name="msg" Required
+                                        rows="4" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <input class="btn btn-primary w-100 py-3" name="submit" type="submit">
+
+                                </div>
+
+                            </div>
+                        </form>
+                        <div id="loader" class="loader"></div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.8s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-map-marker-alt text-white"></i>
-                        </div>
-                        <div class="ps-4" style="font-family: 'Times New Roman', Times, serif;">
-                            <h5 class="mb-2" style="font-family: 'Times New Roman', Times, serif;">Visit our office</h5>
-                            <h6 class="text-primary mb-0" style="font-family: 'Times New Roman', Times, serif;">NO 51,
-                                Balaji Nagar, Madukkarai, Coimbatore-641105,Tamilnadu.</h6>
-                        </div>
+                    <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d946.9275920923899!2d76.9467893561882!3d11.02627100644289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858e8f255ab59%3A0xfc7f5ba2980c0e3b!2sJawahar%20Nagar%2C%20Saibaba%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641011!5e0!3m2!1sen!2sin!4v1721537643167!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"> -->
+
+                        </iframe>
+                        </iframe>
                     </div>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form method="post" name="google-sheet">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" name="name"
-                                    maxlength="20" Required placeholder="Your Name" style="height: 55px;">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" name="mail" Required
-                                    placeholder="Your Email" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" name="subject" Required
-                                    placeholder="Subject" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" name="mob" maxlength="10"
-                                    Required placeholder="Mobile_No" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" name="msg" Required rows="4"
-                                    placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <input class="btn btn-primary w-100 py-3" name="submit" type="submit">
-
-                            </div>
-
-                        </div>
-                    </form>
-                    <div id="loader" class="loader"></div>
-                </div>
-                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d946.9275920923899!2d76.9467893561882!3d11.02627100644289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858e8f255ab59%3A0xfc7f5ba2980c0e3b!2sJawahar%20Nagar%2C%20Saibaba%20Colony%2C%20Coimbatore%2C%20Tamil%20Nadu%20641011!5e0!3m2!1sen!2sin!4v1721537643167!5m2!1sen!2sin"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <!-- width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"> -->
-
-                    </iframe>
-                    </iframe>
                 </div>
             </div>
         </div>
-    </div>
-    <script type="text/javascript">
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzXMXnju1y8-ncr-H7KD_clICH4cSjWBHGwrurpN3mYFFVBb11dvKHnJITWyxEJO3vM-g/exec';
-        const form = document.forms['google-sheet'];
-        const loader = document.getElementById('loader');
+        <script type="text/javascript">
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzXMXnju1y8-ncr-H7KD_clICH4cSjWBHGwrurpN3mYFFVBb11dvKHnJITWyxEJO3vM-g/exec';
+            const form = document.forms['google-sheet'];
+            const loader = document.getElementById('loader');
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            loader.style.display = 'block'; // Show the loader
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                loader.style.display = 'block'; // Show the loader
 
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    loader.style.display = 'none'; // Hide the loader on success
-                    alert("You have successfully submitted.");
-                    // Optionally, you can reload the page after submission
-                    window.location.reload();
-                })
-                .catch(error => {
-                    loader.style.display = 'none'; // Hide the loader on error
-                    console.error('Error!', error.message);
-                });
-        });
-    </script>
-
-
-
-    <!-- Contact End -->
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        loader.style.display = 'none'; // Hide the loader on success
+                        alert("You have successfully submitted.");
+                        // Optionally, you can reload the page after submission
+                        window.location.reload();
+                    })
+                    .catch(error => {
+                        loader.style.display = 'none'; // Hide the loader on error
+                        console.error('Error!', error.message);
+                    });
+            });
+        </script>
+        <!-- Contact End -->
 
 
-    <!-- Vendor Start -->
-    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <!-- Vendor Start -->
+        <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5 mb-5">
             <div class="bg-white">
                 <div class="owl-carousel vendor-carousel">
@@ -335,140 +308,143 @@
             </div>
         </div>
     </div> -->
-    <!-- Vendor End -->
+        <!-- Vendor End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-40  p-4">
-                        <a href="index.html" class="navbar-brand">
-                            <h1 class="m-0 text-white"><img src="./img/technocovaiwhite.png" alt="" height="70px"
-                                    width="100px">
-                            </h1>
-                        </a>
-                        <p class="mt-3 mb-4" style="text-align:justify;font-size:18px;">TECHNOCOVAI is a
-                            leading provider of Software Development
-                            We offer a comprehensive array of Software Development Training programs for all
-                            levels of
-                            development skills.</p>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-6">
-                    <div class="row gx-5">
-                        <div class="col-lg-6 col-md-12 pt-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Get In Touch</h3>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-geo-alt text-primary me-2" style="text-align:center ;"></i>
-                                <p class="mb-0">NO 51, Balaji Nagar, Madukkarai,Coimbatore-641105,Tamilnadu</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <a class="mb-0"
-                                    href="mailto:technocovaisoftwares@gmail.com">technocovaisoftwares@gmail.com</a>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+91 93639 22322</p>
-                            </div>
+        <!-- Footer Start -->
+        <div class="container-fluid text-light mt-5 wow fadeInUp" data-wow-delay="0.1s"
+            style="background-color: #6f08cf;">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-6 footer-about">
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center h-40  p-4">
+                            <a href="index.html" class="navbar-brand">
+                                <h1 class="m-0 text-white"><img src="./img/technocovaiwhite.png" alt="" height="70px"
+                                        width="100px">
+                                </h1>
+                            </a>
+                            <p class="mt-3 mb-4" style="text-align:justify;font-size:18px;">TECHNOCOVAI is a
+                                leading provider of Software Development
+                                We offer a comprehensive array of Software Development Training programs for all
+                                levels of
+                                development skills.</p>
 
                         </div>
-                        <div class="col-lg-6 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <div class="rounded h-100 d-flex align-items-center p-5 wow zoomIn"
-                                    data-wow-delay="0.9s">
-                                    <div class="d-flex mt-3 ">
-                                        <a class="btn btn-primary btn-square me-2"
-                                            href="mailto:technocovaisoftwares@gmail.com"><i
-                                                class="fa fa-envelope"></i></a>
-                                        <a class="btn btn-primary btn-square me-2" href="#"><i
-                                                class="fab fa-facebook-f fw-normal"></i></a>
-                                        <a class="btn btn-primary btn-square me-2" href="#"><i
-                                                class="fab fa-linkedin-in fw-normal"></i></a>
-                                        <a class="btn btn-primary btn-square me-2"
-                                            href="https://www.instagram.com/technocovai/"><i
-                                                class="fab fa-instagram fw-normal"></i></a>
-                                        <a class="btn btn-primary btn-square me-2" href="#"><i
-                                                class="fab fa-youtube fw-normal"></i></a>
-                                    </div>
-                                    <!-- <div class="col-12">
-                                                <select class="form-select bg-light border-0" style="height: 40px;"
-                                                    name="courses" Required>
-                                                    <option selected>Select Courses</option>
-                                                    <optgroup label="Medical Coding">
-                                                        <option value="BMC">BMC</option>
-                                                        <option value="AMC">AMC</option>
-                                                        <option value="CPC">CPC</option>
-                                                        <option value="ICD">ICD</option>
-                                                        <option value="DAP">DAP</option>
-                                                        <option value="CRC">CRC</option>
-                                                        <option value="CCS">CCS</option>
-                                                    </optgroup>
-                                                    <optgroup label="Software Development">
-                                                        <option value="DWD">DWD</option>
-                                                        <option value="DPP">DPP</option>
-                                                        <option value="Full Stack Development">Full Stack Development
-                                                        </option>
-                                                        <option value="DDSP">DDSP</option>
-                                                        <option value="DMLP">DMLP</option>
-                                                        <option value="DSML">DSML</option>
-                                                        <option value="DCC">DCC</option>
-                                                        <option value="DJP">DJP</option>
-                                                        <option value="DMO">DMO</option>
-                                                    </optgroup>
-                                                </select>
-                                            </div>
-                                            <div class="col-12">
-                                                <textarea class="form-control bg-light border-0" name="msg" Required rows="3"
-                                                    placeholder="Message"></textarea>
-                                            </div> -->
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="row gx-5">
+                            <div class="col-lg-6 col-md-12 pt-5 mb-5">
+                                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                    <h3 class="text-light mb-0">Get In Touch</h3>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-geo-alt text-primary me-2" style="text-align:center ;"></i>
+                                    <p class="mb-0">NO 51, Balaji Nagar, Madukkarai,Coimbatore-641105,Tamilnadu</p>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-envelope-open text-primary me-2"></i>
+                                    <a class="mb-0"
+                                        href="mailto:technocovaisoftwares@gmail.com">technocovaisoftwares@gmail.com</a>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-telephone text-primary me-2"></i>
+                                    <p class="mb-0">+91 93639 22322</p>
+                                </div>
 
+                            </div>
+                            <div class="col-lg-6 col-md-12 pt-0 pt-lg-5 mb-5">
+                                <div class="link-animated d-flex flex-column justify-content-start">
+                                    <div class="rounded h-100 d-flex align-items-center p-5 wow zoomIn"
+                                        data-wow-delay="0.9s">
+                                        <div class="d-flex mt-3 ">
+                                            <a class="btn btn-primary btn-square me-2"
+                                                href="mailto:technocovaisoftwares@gmail.com"><i
+                                                    class="fa fa-envelope"></i></a>
+                                            <a class="btn btn-primary btn-square me-2" href="#"><i
+                                                    class="fab fa-facebook-f fw-normal"></i></a>
+                                            <a class="btn btn-primary btn-square me-2" href="#"><i
+                                                    class="fab fa-linkedin-in fw-normal"></i></a>
+                                            <a class="btn btn-primary btn-square me-2"
+                                                href="https://www.instagram.com/technocovai/"><i
+                                                    class="fab fa-instagram fw-normal"></i></a>
+                                            <a class="btn btn-primary btn-square me-2" href="#"><i
+                                                    class="fab fa-youtube fw-normal"></i></a>
+                                        </div>
+                                        <!-- <div class="col-12">
+                                                        <select class="form-select bg-light border-0" style="height: 40px;"
+                                                            name="courses" Required>
+                                                            <option selected>Select Courses</option>
+                                                            <optgroup label="Medical Coding">
+                                                                <option value="BMC">BMC</option>
+                                                                <option value="AMC">AMC</option>
+                                                                <option value="CPC">CPC</option>
+                                                                <option value="ICD">ICD</option>
+                                                                <option value="DAP">DAP</option>
+                                                                <option value="CRC">CRC</option>
+                                                                <option value="CCS">CCS</option>
+                                                            </optgroup>
+                                                            <optgroup label="Software Development">
+                                                                <option value="DWD">DWD</option>
+                                                                <option value="DPP">DPP</option>
+                                                                <option value="Full Stack Development">Full Stack Development
+                                                                </option>
+                                                                <option value="DDSP">DDSP</option>
+                                                                <option value="DMLP">DMLP</option>
+                                                                <option value="DSML">DSML</option>
+                                                                <option value="DCC">DCC</option>
+                                                                <option value="DJP">DJP</option>
+                                                                <option value="DMO">DMO</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <textarea class="form-control bg-light border-0" name="msg" Required rows="3"
+                                                            placeholder="Message"></textarea>
+                                                    </div> -->
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid text-white" style="background: #061429;">
-            <div class="container text-center">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-6">
-                        <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                            <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">www.technocovai.com</a>.
-                                All
-                                Rights
-                                Reserved.
-
-                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                                <!-- Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p> -->
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="container-fluid text-white" style="background:#e529f2 ">
+                <div class="container text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-6">
+                            <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                                <p class="mb-0">&copy; <a class="text-white border-bottom"
+                                        href="#">www.technocovai.com</a>.
+                                    All
+                                    Rights
+                                    Reserved.
 
-        <!-- Footer End -->
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+                                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                                    <!-- Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i
+                    class="bi bi-arrow-up"></i></a>
 
 
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <!-- JavaScript Libraries -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/wow/wow.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/counterup/counterup.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+            <!-- Template Javascript -->
+            <script src="js/main.js"></script>
 
 
 </body>

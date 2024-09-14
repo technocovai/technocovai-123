@@ -1,9 +1,10 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06A3DA;
+    --primary: #e529f2;
     --secondary: #34AD54;
     --light: #EEF9FF;
     --dark: #091E3E;
+    --blue: #6f08cf;
 }
 
 
@@ -97,10 +98,14 @@ h6,
 
 .btn-primary:hover {
     box-shadow: inset 0 0 0 0 var(--primary);
+    background-color: var(--blue);
+    color: #fff;
 }
 
 .btn-secondary:hover {
     box-shadow: inset 0 0 0 0 var(--secondary);
+    background-color: var(--blue);
+    color: #fff;
 }
 
 .btn-square {
@@ -512,7 +517,7 @@ h6,
 }
 
 .bg-header {
-    background:  url(../img/key4.jpg) center center no-repeat;
+    background: url(../img/key4.jpg) center center no-repeat;
     background-size: cover;
     height: 550px;
 }
